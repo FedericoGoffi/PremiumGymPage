@@ -1,0 +1,258 @@
+.navBar {
+    display: flex;
+    position: fixed;
+    height: 80px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    color: white;
+    overflow: hidden;
+    transition: background .7s;
+}
+
+.navBar.navBarScroll {
+    padding: 0;
+    background: #000;
+}
+
+.navOpen {
+    display: flex;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: #222;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+.navLink {
+    display: flex;
+    font-size: 2em;
+    font-weight: 400;
+    color: white;
+    margin-top: 40px;
+    justify-content: center;
+}
+
+.contactLink {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    font-weight: 400;
+    color: white;
+}
+
+.contactLink:hover{
+    cursor: pointer;
+    color: #e64900;
+}
+
+.logoMenu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 25px;
+    height: 15px;
+    color: white;
+}
+
+.LogoMenu:hover {
+    cursor: pointer;
+}
+
+.LogoClose {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    color: black;
+}
+
+.LogoClose:hover {
+    cursor: pointer;
+}
+
+.linksConteiner {
+    margin: 0;
+    padding: 0;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.3em;
+    font-weight: 1000;
+    padding-left: 10px;
+    transition: .5s;
+}
+
+.color_logo {
+    color: #e64900;
+}
+
+.color_logo_white {
+    color: white;
+}
+
+.color_logo:hover,
+.color_logo_white:hover,
+.logo:hover {
+    cursor: pointer;
+}
+
+.navLink:hover {
+    cursor: pointer;
+    color: #e64900;
+  }
+
+.navOnScroll {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #9e9e9e;
+}
+
+@media (min-width : 800px) {
+    
+    .logo {
+        font-size: 2.3em;
+        font-weight: 1000;
+        padding-left: 15px;
+    }
+
+    .linksConteiner {
+        display: flex;
+        align-items: center;
+        margin-right: 80px;
+    }
+
+    .navLink {
+        font-weight: 1000;
+        padding-top: 0px;
+        margin-top: 4px;
+        font-size: 1.3em;
+        transition: 0.5s;
+        color: #e64900;
+        margin-right: 50px;
+    }
+    
+    .navLink:hover {
+      cursor: pointer;
+      color: #e64900;
+    }
+
+    .border {
+        height: 2px;
+        width: 0;
+        background-color: transparent;
+        transition: width 0.3s ease-in-out, background-color 0.3s ease-in-out;
+      }
+      
+      .highlightedLink {
+        color: #e64900;
+      }
+      
+      .borderHighlight {
+        width: 68%;
+        background-color: #e64900;
+      }
+
+
+    .contactLink:hover {
+        cursor: pointer;
+    }
+
+    .navOnScroll {
+        align-content: center;
+        align-items: center;
+        justify-content: space-between;
+        height: 50px;
+    }
+
+    .contactLink {
+        color: #e64900;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.3em;
+        font-weight: 1000;
+        padding: 0px;
+        margin: 0px;
+        transition: 0.3s;
+        border: 2px solid #e64900;
+        padding: 2px 20px 2px 20px;
+        border-radius: 30px;
+    }
+
+    .contactLink:hover {
+        cursor: pointer;
+        transform: scale(1.1);
+    }
+
+}
+
+@media (min-width : 480px) and (max-width : 799px) {
+    
+    .navBar {
+        display: flex;
+        position: fixed;
+        height: 70px;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 2;
+        color: white;
+        overflow: hidden;
+        transition: background .7s;
+      }
+    
+    .navOpen {
+        display: flex;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background-color: #222;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 0px;
+        padding: 0px;
+        overflow: hidden;
+        border: 0px;
+    }
+    
+    .navLink {
+        display: flex;
+        font-size: 2em;
+        font-weight: 400;
+        color: white;
+        padding-top: 50px;
+    }
+    
+    .contactLink {
+            display: flex;
+            font-size: 2em;
+            font-weight: 400;
+            color: white;
+            padding-top: 50px;
+            display: flex;
+    }
+    
+    .logoMenu {
+        padding-right: 15px;
+        height: 45px;
+        color: white;
+    }
+    
+    .logo {
+        display: flex;
+        color: white;
+        font-size: 1.8em;
+        font-weight: 1000;
+        padding-left: 10px;
+        transition: .5s;
+    }
+}
